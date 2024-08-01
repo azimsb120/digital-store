@@ -10,7 +10,3 @@ init_db(app)
 @app.route("/")
 def index():
     return f"API server is running at {request.host_url}"
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
