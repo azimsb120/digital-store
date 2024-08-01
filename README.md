@@ -4,23 +4,21 @@
 
 A minimal digital product marketplace where creators can upload and sell digital content, and users can browse and purchase these products.
 
-## Tech stack
+For the purposes of this proof of concept, _selling_ refers to distributing digital content, and _purchasing_ refers to downloading it.
+
+## Tech Stack
 
 - **Backend:** Python (Flask)
-
 - **Frontend:** JavaScript (Vue.js)
-
 - **Database:** MySQL
-
 - **Containerization:** Docker
-
 - **Deployment:** AWS (EC2, S3, RDS)
 
-## Run the app
+## Run the App
 
-### Using docker
+### Using Docker
 
-If available, using docker (and `docker-compose`) is the easiest way to run the db, backend, and frontend.
+If available, using Docker (and `docker-compose`) is the easiest way to run the database, backend, and frontend.
 
 From the current working directory, run:
 
@@ -30,12 +28,12 @@ docker-compose up --build
 
 ## High-level roadmap
 
-- [ ] Version control: Initialize Git repository
-- [ ] Setup environment: Virtual environment and dependencies for `api`
-- [ ] Makefile: For setup, dev, clean
-- [ ] Docker config: Create `docker-compose.yml` and `Dockerfile` for `db` and `api`
-- [ ] Database integration: MySQL with SQLAlchemy
-- [ ] Pydantic Models for creators, products, and data validation
+- [x] Version control: Initialize Git repository
+- [x] Setup environment: Virtual environment and dependencies for `api`
+- [x] Makefile: For setup, dev, clean
+- [x] Docker config: Create `docker-compose.yml` and `Dockerfile` for `db` and `api`
+- [x] Database integration: MySQL with SQLAlchemy
+- [x] Pydantic Models for creators, products, and data validation
 - [ ] User management: User registration and login with JWT
 - [ ] Creator functionality: APIs for product upload and management
 - [ ] File storage: Remote storage with AWS S3
@@ -53,4 +51,4 @@ docker-compose up --build
 
 ## Acknowledgements
 
-I acknowledge the use of official the documentations (Flask, Vue.js), search engine (Google), and LLMs (ChatGPT 4o and Claude 3.5) for assistance in completing this project.
+I acknowledge the use of official documentation (Flask, Vue.js), search engines (Google), and LLMs (ChatGPT 4o and Claude 3.5) for assistance in completing this project.
