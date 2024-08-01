@@ -1,6 +1,10 @@
+from config import Config
+from db import init_db
 from flask import Flask, request
 
 app = Flask(__name__)
+app.config.from_object(Config)
+init_db(app)
 
 @app.route('/')
 def index():
