@@ -16,7 +16,20 @@ For the purposes of this proof of concept, _selling_ refers to distributing digi
 
 ## Run the App
 
-### Using Docker
+### Environment Variables
+
+Use `.env.example` as a template to create a `.env` file in the current working directory, and set the following variables:
+
+- ENVIRONMENT
+- MYSQL_ROOT_PASSWORD
+- MYSQL_DATABASE
+- MYSQL_USER
+- MYSQL_PASSWORD
+- DATABASE_URI=`mysql+mysqlconnector://${MYSQL_USER}:${MYSQL_PASSWORD}@{ENVIRONMENT}/${MYSQL_DATABASE}`
+
+Note: For `ENVIRONMENT`, set to `db` for Docker and `localhost` for local development.
+
+### Run using Docker
 
 If available, using Docker (and `docker-compose`) is the easiest way to run the database, backend, and frontend.
 
