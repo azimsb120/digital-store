@@ -1,5 +1,5 @@
-from config import Config
-from db import init_db
+from src.config import Config
+from src.db import init_db
 from flask import Flask, request
 
 app = Flask(__name__)
